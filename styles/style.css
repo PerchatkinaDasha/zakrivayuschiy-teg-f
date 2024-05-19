@@ -140,31 +140,31 @@
   overflow: hidden;
 }
 
-.card:nth-of-type(2) .card__image {
+.invert {
   filter: invert(0.3);
 }
 
-.card:nth-of-type(3) .card__image {
+.hue-rotate {
   filter: hue-rotate(285deg);
 }
 
-.card:nth-of-type(4) .card__image {
+.blur {
   filter: blur(4px);
 }
 
-.card:nth-of-type(5) .card__image {
+.sepia{
   filter: sepia(69%);
 }
 
-.card:nth-of-type(6) .card__image {
+.grayscale {
   filter: grayscale(100%);
 }
 
-.card:nth-of-type(7) .card__image {
+.brightness {
   filter: brightness(20%);
 }
 
-.card:nth-of-type(8) .card__image {
+.grayscale_brightness{
   filter: brightness(0.5) grayscale(100%);
 }
 
@@ -215,6 +215,10 @@
   border: 2px solid var(--accent-color);
   background-color: var(--bg-color);
   cursor: pointer;
+}
+
+.button:focus {
+  outline: none;
 }
 
 .card__buttons {
