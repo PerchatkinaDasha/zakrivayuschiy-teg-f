@@ -76,6 +76,7 @@
   text-transform: uppercase;
   transition: opacity 0.3s ease;
   padding: 0;
+  cursor: pointer;
 }
 
 .theme-menu__button:hover {
@@ -278,14 +279,12 @@
   transition: box-shadow 0.3s ease;
 }
 
-.save__button {
-  gap: 8px;
-  padding: 15px 20px;
-  transition: box-shadow 0.3s ease;
-}
-
 .button:hover::before {
   transform: scaleX(1);
+}
+
+.button:focus-visible {
+  box-shadow: 2px 2px 0px 0px var(--accent-color);
 }
 
 .button::before {
@@ -305,7 +304,7 @@
   position: fixed;
   inset: 0;
   display: grid;
-  padding: 30px var(--pad30_40);
+  padding: 30px 30px;
   color: var(--accent-color);
   font-family: var(--font-accent);
   font-size: 14px;
